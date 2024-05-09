@@ -3,10 +3,7 @@
 
 
 def minOperations(n: int) -> int:
-    """Calculates the minimum operations needed to result
-    to an exact number of n H characters in the file.
-    Calculates the minimum number of operations needed to transform
-    a string of length n into a string of exactly n H characters"""
+    
 
     if n <= 1:
         return 0
