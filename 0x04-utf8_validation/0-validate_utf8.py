@@ -25,10 +25,10 @@ def validUTF8(data):
             if num_bytes == 1 or num_bytes > 4:
                 return False
 
-            else:
-                if not (num & mask_1 and not (num & mask_2)):
-                    return False
+        else:
+            if not (num & mask_1 and not (num & mask_2)):
+                return False
 
-            num_bytes -= 1
+        num_bytes -= 1
 
     return num_bytes == 0
