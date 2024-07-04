@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Prime game"""
 
+
 def primes(n):
     """Returns a list of prime 1 and n inclusive
     Args: n: upper range of prime
@@ -10,9 +11,10 @@ def primes(n):
     for p in range(2, n + 1):
         if (sieve[p]):
             prime.append(p)
-            for i in range(p , n + 1, p):
+            for i in range(p, n + 1, p):
                 sieve[i] = False
     return prime
+
 
 def isWinner(x, nums):
     """Checks if player x wins the game
